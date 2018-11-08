@@ -1,4 +1,10 @@
 # html_projekt
+******************************
+
+Kui tehtud, siis teise kasti: Linnuke + Ülesanne lahendaja
+
+******************************
+
 [1][] Loo oma branch (tekib kuju  Konstantin------------
 				  |
 				   master branch-------------
@@ -22,7 +28,7 @@ PEAMINE KAUST:
 Värvid(võib hiljem muuta):
 #195087  = Nupud
 #2c86e0  = Veebi lehe värv
-Navigatsiooni riba kus niiöelda 3 nuppu(lehe üleval ja keskel):
+Navigatsiooni riba kus niiöelda 3 nuppu(lehe üleval ja keskel) :
 
 Vaheleht1        Pealeht	Vaheleht2
 
