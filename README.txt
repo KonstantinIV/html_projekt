@@ -5,15 +5,16 @@ Kui tehtud, siis teise kasti: Linnuke + Ülesanne lahendaja
 
 ******************************
 
-[1][] Loo oma branch (tekib kuju  Konstantin------------
+[1][] Loo oma branch tekib kuju  
+				  Konstantin------------
 				  |
 				   master branch-------------
 				  |
 				  Sina--------------------
-)
 
-[2][]Luua süsteem:
 
+[2][]Luua failisüsteem:
+________________________________________
 PEAMINE KAUST:
 ----pealeht.html
 ----vaheleht1.html
@@ -23,12 +24,13 @@ PEAMINE KAUST:
 	----style.css
 	JAVASCRIPT KAUST:
 	----script.js
+___________________________________________
 
-[3][]
+[3][] Navigatsiooniriba loomine:
 Värvid(võib hiljem muuta):
 #195087  = Nupud
 #2c86e0  = Veebi lehe värv
-Navigatsiooni riba kus niiöelda 3 nuppu(lehe üleval ja keskel) :
+Navigatsiooni riba kus niiöelda 3 kandilst nuppu(lehe üleval ja keskel) :
 
 Vaheleht1        Pealeht	Vaheleht2
 
