@@ -13,7 +13,7 @@ Kui tehtud, siis teise kasti: Linnuke + Ülesanne lahendaja
 				  Sina-------------------- 
 
 
-[2][]Luua failisüsteem:
+[2][x]Luua failisüsteem:
 ________________________________________
 PEAMINE KAUST:
 ----pealeht.html
