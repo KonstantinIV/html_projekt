@@ -5,7 +5,7 @@ Kui tehtud, siis teise kasti: Linnuke + Ülesanne lahendaja
 
 ******************************
 
-[1][] Loo oma branch tekib kuju  
+[1][x] Loo oma branch tekib kuju  
 				  Konstantin------------
 				  |
 				   master branch-------------
@@ -13,7 +13,7 @@ Kui tehtud, siis teise kasti: Linnuke + Ülesanne lahendaja
 				  Sina--------------------
 
 
-[2][]Luua failisüsteem:
+[2][x]Luua failisüsteem:
 ________________________________________
 PEAMINE KAUST:
 ----pealeht.html
