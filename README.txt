@@ -10,10 +10,10 @@ Kui tehtud, siis teise kasti: Linnuke + Ülesanne lahendaja
 				  |
 				   master branch-------------
 				  |
-				  Sina--------------------
+				  Sina-------------------- 
 
 
-[2][x]Luua failisüsteem:
+[2][]Luua failisüsteem:
 ________________________________________
 PEAMINE KAUST:
 ----pealeht.html
