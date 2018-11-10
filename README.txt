@@ -39,7 +39,7 @@ Vajutades nuppule viib vastavalt lehele
 
 
 
-[4][] Logo navigatsiooni ribast üleval keskel. Logo võib ise valmis teha. (Kõikidel lehtedel)
+[4][+ Konstantin võimalik et muutub] Logo navigatsiooni ribast üleval keskel. Logo võib ise valmis teha. (Kõikidel lehtedel)
 [5][] Veebilehe footer ehk lehe alumine osa, mis näitab mingit lisa infot nt leht mis viitab Facebooki lehele, või näitab lingid mis viidab vahelehtedele, sisaldab kontakt infot. NÄIDE. mine ülikooli pealehele ja scrolli alla lõpuni. (Kõikidel lehtedel)
 [6][] Content küsimärgi all
 
