@@ -10,10 +10,25 @@
     right: 0;
     position: absolute;
     margin: 0 auto;
-    width:500px;
-    height:600px;
+    width:400px;
+    height:500px;
+}
+html{
+    display: inline;
+}
+body{
+    background-color:#152031 ;
+    margin: 0;
+    display: inline;
+    /*#003791*/
 }
 
-body{
-    background-color:#003791 ;
+
+footer{
+   width:100%;
+   /*position: absolute;*/
+   display: block;
+   bottom: 0;
+   height: 250px;
+   background-color: #243753;
 }
