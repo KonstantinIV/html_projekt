@@ -32,3 +32,11 @@ footer{
    height: 250px;
    background-color: #243753;
 }
+#hrr{
+    border-color: #ff6200;
+    border-width: 1px;
+    border-style: inset;
+    margin-top: 0;
+    margin-bottom: 8px;
+    width:90%;
+}
