@@ -26,7 +26,9 @@ PEAMINE KAUST:
 	----script.js
 ___________________________________________
 
-[3][Hain proovib teha] Navigatsiooniriba loomine:
+
+[3][X] Navigatsiooniriba loomine:
+
 Värvid(võib hiljem muuta):
 #195087  = Nupud
 #2c86e0  = Veebi lehe värv
