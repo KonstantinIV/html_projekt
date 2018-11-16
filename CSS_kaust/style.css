@@ -1,3 +1,4 @@
+/*HEADING*************************************************************************/
 
 #fire_container{
     position: relative;
@@ -6,7 +7,6 @@
 }
 
 #fire_logo{
-    
     left: 0;
     right: 0;
     position: absolute;
@@ -14,6 +14,10 @@
     width:400px;
     height:500px;
 }
+
+
+/*CONTENTS*************************************************************************/
+
 html{
     display: inline;
 }
@@ -23,6 +27,68 @@ body{
     display: inline;
     /*#003791*/
 }
+
+
+#content_box{
+    margin:20px auto;
+    width:90%;
+    height:380px;
+    background-color: #243753;
+}
+.content_box_text_container{
+    position:relative;
+    
+    width: 49%;
+    display: inline-block;
+    margin-left:110px;
+    margin-top:70px ;
+}
+.left_cont{
+    float:right;
+    margin-right: 80px;
+    margin-left: 0;
+}
+.content_box_header{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+    padding-bottom:0;
+    margin: 0;
+}
+.content_box_text{
+    padding-bottom:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+    padding-bottom:0;
+}
+#world_image{
+    /*position :absolute;*/
+    display: inline-block;
+    margin-left: 40px;
+    width: 210px;
+    height:210px;
+    float:right;
+    margin-top:80px;
+    margin-right: 70px;
+}
+#stat_image{
+    display: inline-block;
+    margin-right: 40px;
+    width: 210px;
+    height:210px;
+    float: left;
+    margin-top:80px;
+    margin-left: 110px;
+}
+
+
+
+
+
+
+
+
+
+
 .imgcontainer {
     padding-top:5px ;
     text-align: center;
@@ -39,29 +105,11 @@ img.avatar {
     float: left
 }
 
-footer{
-   width:100%;
-   /*position: absolute;*/
-   display: block;
-   bottom: 0;
-   height: 250px;
-   background-color: #243753;
-}
-#hrr{
-    border-color: #ff6200;
-    border-width: 1px;
-    border-style: inset;
-    margin-top: 0;
-    margin-bottom: 8px;
-    width:90%;
-}
 
-header{
-    background-color: #0D4D4D;
-}
 
 #navi {
     text-align: center;
+    background-color: #0D4D4D;
 }
 
 #navi ul{
@@ -91,3 +139,94 @@ header{
 }
 
 
+/*CLASSES FOR MULTIPLE ELEMENTS***************************************************/
+
+
+
+/* FOOTER  **********************************************************************/
+
+footer{
+    width:100%;
+    /*position: absolute;*/
+    display: block;
+    bottom: 0;
+    height: 250px;
+    background-color: #071120;
+}
+
+#footer_fire_logo{
+    width:150px;
+    height:150px;
+    margin:0 auto;
+    margin-top: 50px;
+    position: absolute;
+    left:0;
+    right: 0;
+}
+#footer_content_container{
+    width:100%;
+    height: 250px;
+    position: absolute;
+}
+#footer_left_container{
+    width:28%;
+    height:140px;
+    position: absolute;
+    margin-top:40px;
+    right:80px;
+}
+#footer_right_container{
+    width:28%;
+    height:140px;
+    position: absolute;
+    margin-top:40px;
+    left:80px;
+}
+#footer_header{
+    text-align:center;
+    width:100%;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    color:#0093ff;
+    font-size:20px;
+    font-family:Arial Black, Gadget, sans-serif;
+}
+#footer_text{
+    text-align:center;
+    width:100%;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    color:#004cff;
+    font-size:15px;
+    font-family:Arial Black, Gadget, sans-serif;
+}
+
+
+#copyright_footer_line_container{
+    width:100%;
+    margin-top:210px;
+    position: absolute; 
+}
+#footer_line{
+    border-color: #ff6200;
+    border-width: 1px;
+    border-style: inset;
+    margin-top: 0;
+    margin-bottom: 8px;
+    width:90%;
+}
+#copyright_container{
+    width:40%;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+#copyright_text{
+    margin:0 auto;
+    text-align: center;
+}
