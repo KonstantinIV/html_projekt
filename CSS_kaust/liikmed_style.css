@@ -1,0 +1,89 @@
+/*CONTENTS*************************************************************************/
+.line{
+    text-align: center;
+}
+.line_half{
+    height: 2px;
+    background: #133742;
+    margin:0 70px;
+}
+.line_text{
+    position: relative;
+    top: 36px;
+    background: #152031;
+    display: inline-block;
+    padding: 0 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #35bb31 ;
+}
+
+
+.content_box_contributor{
+    margin-top:80px;
+    width:25%;
+    height:700px;
+    background-color: #35bb31;
+    display: inline-block;
+
+}
+.content_box_contributor_left{
+    margin-left: 70px;
+
+}
+.content_box_contributor_middle{
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+.content_box_contributor_right{
+    right: 70px;
+    position: absolute;
+}
+
+.content_contributors{
+    width: 100%;
+    /*position: relative;
+    display: block;*/
+    height: 800px;
+}
+
+.contributor_picture{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+
+}
+.contributor_text_container{
+    margin-left:35px;
+    margin-top:20px ;
+    margin-right: 25px;
+}
+
+.contributor_name{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+    padding-bottom:0;
+    margin: 0;
+    text-align: center;
+}
+.contributor_profession{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.bio_line{
+    border-color: #26db44;
+}
+
+.contributor_bio{
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
