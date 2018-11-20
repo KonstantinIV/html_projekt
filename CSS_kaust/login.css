@@ -22,44 +22,70 @@ body{
     margin: 0;
     display: inline;
 }
-
-.button {
-    display: inline-block;
-    left: 68%;
+form {
+    padding: 10px 100px;
     position: relative;
-    padding: 7px 13px;
-    border: 1px solid #000;
-    border-radius: 19%;
-    background: #407F7F;
-    color: white;
-    text-decoration: none; /*võtab maha lingi joone*/
+    top: 20px;
+	left: 10px;
 }
-
-.navi {
-    text-align: center;
-    background-color: #0D4D4D;
-}
-
-.navi ul{
-    widows: 80px;
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
     display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #0D4D4D;   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-.navi ul li {
-    display: inline-block;
-}
-
-.navi li a {
-    display: block;
+button {
+    background-color: #4CAF50;
     color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.imgcontainer {
+    padding-top:5px ;
     text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-    
+}
+
+.container{
+    padding: 12px 5px;
+    text-align: center;
+    float:left;
+    position: relative;
+    top: 100px;
+	left: 10px;
+}
+img.avatar {
+    width: 3%;
+    border-radius: 50%;
+    float: left
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
 }
 
 

@@ -40,23 +40,23 @@
 }
 .button {
     display: inline-block;
-    float: right;
+    left: 68%;
     position: relative;
-	top: 10px;
     padding: 7px 13px;
     border: 1px solid #000;
     border-radius: 19%;
     background: #407F7F;
     color: white;
     text-decoration: none; /*võtab maha lingi joone*/
-    margin-right: 10px;
 }
 
-#navi {
+.navi {
     text-align: left;
     background-color: #0D4D4D;
+    margin:20px auto;
+    width:90%;
 }
-#navi ul{
+.navi ul{
     widows: 80px;
     display: inline-block;
     list-style: none;
@@ -64,10 +64,10 @@
     padding: 0;
     background-color: #0D4D4D;   
 }
-#navi ul li {
+.navi ul li {
     display: inline-block;
 }
-#navi li a {
+.navi li a {
     display: block;
     color: white;
     text-align: center;
@@ -75,9 +75,18 @@
     text-decoration: none;
     
 }
-#navi li a:hover {
+
+.navi li a:hover:not(.active) {
     background-color: #407F7F;
 }
+
+.active {
+    background-color: #4CAF50;
+}
+.navi a.button:hover {
+    background-color: #4CAF50;
+}
+
 /*CONTENTS*************************************************************************/
 
 html{
