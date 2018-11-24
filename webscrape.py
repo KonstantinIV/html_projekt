@@ -1,6 +1,34 @@
 from bs4 import BeautifulSoup as soup
 import requests
 import re
+import matplotlib.pyplot as plt
+import numpy as np
+import lxml.html
+
+
+#vastavalt            x             y                z
+def tulpdiagram(sinu_koondhinne, kursuse_keskmine,  kursuse_nimed ):
+    # Valikulised võib ära kustutada, ei mõjuta koodi tööd
+    plt.xlabel('Kursused', fontsize=12) # x telje nimetus
+    plt.ylabel('Protsent', fontsize=12) # y telje nimetus
+    plt.title('Hinded') # Diagrammi pealkiri
+
+
+    # Oluline, enne kustutamist konsulteerida Konstantinniga
+    index = np.arange(len(kursuse_nimed)) # indeks ehk järjendi_suurus --> [0,1]
+    plt.bar(index - 0.05, sinu_koondhinne,0.10, label='Sinu koondhinne') # SINU keskmise väärtus vastvalt indeksile
+    plt.bar(index + 0.05, kursuse_keskmine,0.10, label="Kursuse keskmine") # KURSUSE keskmise väärtus vastvalt indeksile
+    plt.xticks(index, kursuse_nimed, fontsize=12) # nimi vastvalt indeksile
+    #plt.ylim([0,100]) # protsendi skaala, self explanatory
+    plt.legend(loc='best') # Näitab legendi
+    plt.gca().yaxis.grid(linestyle='dotted') # Näitab Y axis abistavaid jooni statistika jälgimiseks
+    plt.savefig("graafik.png")
+    print("Valmis")
+
+
+
+#näidis väärtused
+#tulpdiagram([30,40,50,80],[50,60,50,70],["prog","arhit","sisse","mate pilt"])
 
 ################################################################################
 # Funktsioon, mis võtab argumendiks kursuse id ja annab välja kursuse protsendid ning kursuse nime
@@ -61,18 +89,21 @@ def get_hinded(nimi, url, id):
 
 with requests.Session() as c: #Funktsiooni kutsed peaksid kõik toimuma selle sessiooni jooksul#
     url = "https://moodle.ut.ee/login/index.php"
-    USERNAME = open("runtime.txt").read().split("\n")[0] ## Kasutajanimi ja parool vaja sisestada
-    PASSWORD = open("runtime.txt").read().split("\n")[1]
-    c.get(url)
-    login_data = dict(username= USERNAME, password = PASSWORD)
+    login_details = open("login_details.txt", "r", encoding="UTF-8").read().split("\n")
+    USERNAME = login_details[0]           ## Kasutajanimi ja parool vaja sisestada
+    PASSWORD = login_details[1]
+    login_page = c.get(url)
+    lxml_login_page = lxml.html.fromstring(login_page.content)
+    LOGINTOKEN = lxml_login_page.xpath('//input[@name="logintoken"]/@value')[0]
+    #print("This logintoken",LOGINTOKEN)
+
+    
+    login_data = dict(username= USERNAME, password = PASSWORD, logintoken=LOGINTOKEN)
     c.post(url, data=login_data)
     raw_page = c.get("https://moodle.ut.ee/my/")
-    print(raw_page)
-    raw_soup = soup(raw_page.content, "html.parser") #Muudab puhta html-i supi objektiks 
-                                                     #ning saame supi funktsioone kasutada (nt findAll)#
 
-    #################################################################################
-    #Programmi lõik mis loeb millistest kursustest võtab inimene osa
+    raw_soup = soup(raw_page.content, "html.parser") #Muudab puhta html-i supi objektiks
+    #print(raw_soup)
     container = raw_soup.findAll("div", {"class":"box coursebox"})
     kõik_vajalik = []
 
@@ -85,7 +116,9 @@ with requests.Session() as c: #Funktsiooni kutsed peaksid kõik toimuma selle se
                 kursuse_nimi = a.get('title')
                 kursuse_url = a.get('href')
                 kursuse_id = kursuse_url[kursuse_url.find("=")+1:]
+                #print(kursuse_nimi, kursuse_url, kursuse_id)
                 kõik_vajalik.append(get_hinded(kursuse_nimi, kursuse_url, kursuse_id))
+                
     
     # Joonestamise eelne järjendite korrastamine
     kõik_sinu_protsendid = list(map(lambda y: round(float(re.sub(r"[% ()]", "", y))),list(map(lambda x: x[0][0], kõik_vajalik))))
@@ -96,11 +129,5 @@ with requests.Session() as c: #Funktsiooni kutsed peaksid kõik toimuma selle se
     
 ################################################################################
 #Matplotlibi programmilõik
-"""from matplot import tulpdiagram #tulpdiagram(sinu_koondhinne, kursuse_keskmine,  kursuse_nimed ):
+#tulpdiagram(sinu_koondhinne, kursuse_keskmine,  kursuse_nimed ):
 tulpdiagram(kõik_sinu_protsendid, kõik_kursuste_protsendid, kõik_kursused)
-
-"""
-
-    
-
-
