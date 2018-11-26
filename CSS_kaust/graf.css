@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+  }
+#graf{
+    transition: 2s;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+    margin: 50px auto;
+    display: none;
+    /*border:16px solid #184ac0;
+    border-bottom-color: #011e61;
+    border-right-color: #011e61;*/
+    border:16px solid #4CAF50;
+    border-bottom-color: rgb(49, 110, 51);
+    border-right-color: rgb(49, 110, 51);
+    opacity: 0;
+    
+    
+}
