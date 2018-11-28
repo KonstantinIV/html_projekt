@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['webscrape.py'],
-             pathex=['/home/maximov/Videos/Final exe'],
+             pathex=['/home/maximov/Downloads'],
              binaries=[],
              datas=[],
              hiddenimports=[],

@@ -4,6 +4,7 @@ import re
 import matplotlib.pyplot as plt
 import numpy as np
 import lxml.html
+import sys
 
 
 #vastavalt            x             y                z
@@ -89,9 +90,8 @@ def get_hinded(nimi, url, id):
 
 with requests.Session() as c: #Funktsiooni kutsed peaksid kõik toimuma selle sessiooni jooksul#
     url = "https://moodle.ut.ee/login/index.php"
-    login_details = open("login_details.txt", "r", encoding="UTF-8").read().split("\n")
-    USERNAME = login_details[0]           ## Kasutajanimi ja parool vaja sisestada
-    PASSWORD = login_details[1]
+    USERNAME = sys.argv[1]   ## Kasutajanime ja parooli võtab käsirealt
+    PASSWORD = sys.argv[2]
     login_page = c.get(url)
     lxml_login_page = lxml.html.fromstring(login_page.content)
     LOGINTOKEN = lxml_login_page.xpath('//input[@name="logintoken"]/@value')[0]
