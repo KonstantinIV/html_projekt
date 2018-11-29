@@ -1,7 +1,7 @@
 /*HEADING*************************************************************************/
 .header_logo_container{
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 .header_cont{
     position:relative;
@@ -55,6 +55,7 @@
     background-color: #0D4D4D;
     margin:20px auto;
     width:90%;
+    height: 55px;
 }
 .navi ul{
     widows: 80px;
@@ -63,10 +64,15 @@
     margin: 0;
     padding: 0;
     background-color: #0D4D4D;   
+    width: 100%;
 }
 .navi ul li {
-    display: inline-block;
+    /*display: inline-block;*/
+    width: 33.3%;
+    float: left;
+    
 }
+
 .navi li a {
     display: block;
     color: white;
@@ -85,6 +91,10 @@
 }
 .navi a.button:hover {
     background-color: #4CAF50;
+}
+.a_text{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: bold;
 }
 
 /*CONTENTS*************************************************************************/

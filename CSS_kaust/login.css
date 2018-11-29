@@ -1,35 +1,15 @@
-/*HEADING*************************************************************************/
 
-#fire_container{
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-
-#fire_logo{
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: 0 auto;
-    width:400px;
-    height:500px;
-}
 
 
 /*CONTENTS*************************************************************************/
-body{
-    background-color:#152031 ;
-    margin: 0;
-    display: inline;
-}
 form {
     padding: 10px 100px;
     position: relative;
     top: 20px;
-	left: 10px;
+	
 }
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -44,7 +24,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 70%;
 }
 
 button:hover {
@@ -58,15 +38,15 @@ button:hover {
 .container{
     padding: 12px 5px;
     text-align: center;
-    float:left;
+    /*float:left;*/
     position: relative;
-    top: 100px;
-	left: 10px;
+    /*top: 100px;
+	left: 10px;*/
 }
 img.avatar {
     width: 3%;
     border-radius: 50%;
-    float: left
+    /*float: left*/
 }
 
 .imgcontainer {
@@ -75,7 +55,7 @@ img.avatar {
 }
 
 img.avatar {
-    width: 40%;
+    width: 25%;
     border-radius: 50%;
 }
 
@@ -88,95 +68,3 @@ span.psw {
     padding-top: 16px;
 }
 
-
-/*CLASSES FOR MULTIPLE ELEMENTS***************************************************/
-
-
-
-/* FOOTER  **********************************************************************/
-
-footer{
-    width:100%;
-    /*position: absolute;*/
-    display: block;
-    bottom: 0;
-    height: 250px;
-    background-color: #071120;
-}
-
-#footer_fire_logo{
-    width:150px;
-    height:150px;
-    margin:0 auto;
-    margin-top: 50px;
-    position: absolute;
-    left:0;
-    right: 0;
-}
-#footer_content_container{
-    width:100%;
-    height: 250px;
-    position: absolute;
-}
-#footer_left_container{
-    width:28%;
-    height:140px;
-    position: absolute;
-    margin-top:40px;
-    right:80px;
-}
-#footer_right_container{
-    width:28%;
-    height:140px;
-    position: absolute;
-    margin-top:40px;
-    left:80px;
-}
-#footer_header{
-    text-align:center;
-    width:100%;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:0 auto;
-    color:#0093ff;
-    font-size:20px;
-    font-family:Arial Black, Gadget, sans-serif;
-}
-#footer_text{
-    text-align:center;
-    width:100%;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:0 auto;
-    color:#004cff;
-    font-size:15px;
-    font-family:Arial Black, Gadget, sans-serif;
-}
-
-
-#copyright_footer_line_container{
-    width:100%;
-    margin-top:210px;
-    position: absolute; 
-}
-#footer_line{
-    border-color: #ff6200;
-    border-width: 1px;
-    border-style: inset;
-    margin-top: 0;
-    margin-bottom: 8px;
-    width:90%;
-}
-#copyright_container{
-    width:40%;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:0 auto;
-}
-#copyright_text{
-    margin:0 auto;
-    text-align: center;
-}
