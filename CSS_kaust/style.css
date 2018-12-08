@@ -23,7 +23,7 @@
     font-size: 18px;
 }
 
-#fire_container{
+.fire_container{
     position: static;
     float: right;
     height: 400px;
@@ -31,7 +31,7 @@
     margin-top: 50px;
     
 }
-#fire_logo{
+.fire_logo{
     right: 0;
     /*position: absolute;*/
     /*margin: 0 auto;*/
@@ -58,7 +58,7 @@
     height: 55px;
 }
 .navi ul{
-    widows: 80px;
+    
     display: inline-block;
     list-style: none;
     margin: 0;
@@ -94,7 +94,7 @@
 }
 .a_text{
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-style: bold;
+    /*font-style: bold;*/
 }
 
 /*CONTENTS*************************************************************************/
@@ -106,10 +106,10 @@ body{
     background-color:#152031 ;
     margin: 0;
     display: inline;
-    /*#003791*/
+    /*.003791*/
 }
 
-#content_box{
+.content_box{
     margin:20px auto;
     width:90%;
     height:380px;
@@ -140,7 +140,7 @@ body{
     color: white;
     padding-bottom:0;
 }
-#world_image{
+.world_image{
     /*position :absolute;*/
     
     margin-left: 40px;
@@ -150,7 +150,7 @@ body{
     margin-top:80px;
     margin-right: 70px;
 }
-#stat_image{
+.stat_image{
     
     margin-right: 40px;
     width: 210px;
@@ -174,7 +174,7 @@ footer{
     background-color: #071120;
 }
 
-#footer_fire_logo{
+.footer_fire_logo{
     width:150px;
     height:150px;
     margin:0 auto;
@@ -183,26 +183,26 @@ footer{
     left:0;
     right: 0;
 }
-#footer_content_container{
+.footer_content_container{
     width:100%;
     height: 250px;
     position: absolute;
 }
-#footer_left_container{
+.footer_left_container{
     width:28%;
     height:140px;
     position: absolute;
     margin-top:40px;
     right:80px;
 }
-#footer_right_container{
+.footer_right_container{
     width:28%;
     height:140px;
     position: absolute;
     margin-top:40px;
     left:80px;
 }
-#footer_header{
+.footer_header{
     text-align:center;
     width:100%;
     bottom:0;
@@ -213,7 +213,7 @@ footer{
     font-size:20px;
     font-family:Arial Black, Gadget, sans-serif;
 }
-#footer_text{
+.footer_text{
     text-align:center;
     width:100%;
     bottom:0;
@@ -226,12 +226,12 @@ footer{
 }
 
 
-#copyright_footer_line_container{
+.copyright_footer_line_container{
     width:100%;
     margin-top:210px;
     position: absolute; 
 }
-#footer_line{
+.footer_line{
     border-color: #ff6200;
     border-width: 1px;
     border-style: inset;
@@ -239,14 +239,14 @@ footer{
     margin-bottom: 8px;
     width:90%;
 }
-#copyright_container{
+.copyright_container{
     width:40%;
     bottom:0;
     left:0;
     right:0;
     margin:0 auto;
 }
-#copyright_text{
+.copyright_text{
     margin:0 auto;
     text-align: center;
     color: antiquewhite;
