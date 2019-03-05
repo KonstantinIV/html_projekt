@@ -1,0 +1,11 @@
+window.alert("seal")
+    document.getElementById("graf").style.transition = "1s";
+    document.getElementById("graf").style.visibility = "visible";
+    document.getElementById("graf").style.display = "block";
+    document.getElementById("graf").style.webkitTransition = 'opacity 1s';
+
+
+
+    element.scrollIntoView({block:"center"}); // center
+    element.style.opacity = "1";
+    return false;
